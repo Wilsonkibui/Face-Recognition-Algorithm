@@ -1,0 +1,19 @@
+Hello Welcome,
+
+Below is a code explanation for the whole code.
+
+In this example, we first load the images of the known and unknown persons using the load_image_file() function.
+Then, we extract the facial features and encode them using the face_encodings() function.
+
+After encoding the faces, we compare them using the compare_faces() function. The compare_faces() function 
+returns a list of boolean values indicating whether the unknown face matches the known face or not. In this case, 
+we only compare one face, so the results list will have one element.
+
+Finally, we print the results indicating whether the unknown person is a match for the known person or not.
+
+Note that this is a simple example, and facial recognition involves much more than just comparing faces. 
+It's important to use facial recognition technology responsibly and follow legal and ethical guidelines.
+
+Authour Will
+
+Thank You
