@@ -1,0 +1,17 @@
+import face_recognition
+
+# Load the images and encode the faces
+known_image = face_recognition.load_image_file("known_person.jpg")
+known_encoding = face_recognition.face_encodings(known_image)[0]
+
+unknown_image = face_recognition.load_image_file("unknown_person.jpg")
+unknown_encoding = face_recognition.face_encodings(unknown_image)[0]
+
+# Compare the faces
+results = face_recognition.compare_faces([known_encoding], unknown_encoding)
+
+# Print the results
+if results[0]:
+    print("The unknown person is a match for the known person!")
+else:
+    print("The unknown person is not a match for the known person.")
